@@ -1,6 +1,6 @@
-# B. Даны два файла, в каждом из которых находится запись многочлена. Задача - сформировать файл,
-# содержащий сумму многочленов.
-
+# # B. Даны два файла, в каждом из которых находится запись многочлена. Задача - сформировать файл,
+# # содержащий сумму многочленов.
+#
 import ex_1
 from random import randint as rnd
 
@@ -13,14 +13,14 @@ print(equation_1)
 
 equation_2 = ex_1.GetEquation(k2)
 print(equation_2)
-#
-# data1 = open('equation_1.txt', 'w')
-# data1.writelines(equation_1)
-# data1.close()
-#
-# data2 = open('equation_2.txt', 'w')
-# data2.writelines(equation_2)
-# data2.close()
+
+data1 = open('equation_1.txt', 'w')
+data1.writelines(equation_1)
+data1.close()
+
+data2 = open('equation_2.txt', 'w')
+data2.writelines(equation_2)
+data2.close()
 
 
 def Divide(string):
@@ -62,8 +62,6 @@ for key in dict_1:
         sum_dict[key] = dict_2[key] + dict_1[key]
 
 print(sum_dict)
-
-
 
 
 
